@@ -1,0 +1,21 @@
+html {
+    background-color: peachpuff;
+}
+
+ul{
+    
+    list-style: none;
+}
+#titulo {
+    font-size: 3rem;
+    color: white;
+}
+
+.elemento-1{
+    color: red; 
+    font-size: 2rem;
+}
+
+.elemento-2{
+    color: blue; 
+}
