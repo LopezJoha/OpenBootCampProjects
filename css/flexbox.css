@@ -12,9 +12,26 @@
     justify-content: center;
     margin-top: 50px;
 }
+.container img {
+    border: solid 2px purple; 
+}
 
-.foto {
+img {
     width: 300px;
     height: 200px;
+    opacity: 0.7;
 }
+
+img:first-child{
+    border: 2px solid orangered; 
+ }
+
+
+img:hover{
+    opacity: 1; 
+    cursor: pointer;
+    border: solid 2px lawngreen; 
+}
+
+
 
