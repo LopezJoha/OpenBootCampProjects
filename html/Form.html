@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 02-Formularios en HTML</title>
+    <link rel="stylesheet" href="/css/Form.css">
+    <title>Formularios en HTML</title>
 </head>
 <body>
+    <!--
     <form action="/" method="GET">
         <label for="usuario">Nombre:</label><br>
         <input type="text" name="usuario" id="usuario" required><br>
@@ -17,5 +19,72 @@
         <button type="button">Enviar</button>
         <button type="reset">Reset</button>
     </form>
+    -->
+    
+    <section class="principal_section">
+        <div class="top-section">
+            <div class= top-image>
+                <img src="/Multimedia/dribbble.png"  alt="dribbble-Logo"/>
+            </div> 
+            <h3>Sign up to Dribbble</h3>
+            <div class="buttons">
+                <button class="google-btn">
+                    <picture>
+                        <img src="/Multimedia/google.png" alt="loGoogle">
+                    </picture>
+                    <span>
+                        Registrarse con Google
+                    </span>
+                </button>
+                <button class="twitter-btn">
+                    <picture>
+                        <img src="/Multimedia/twitter.png" alt="twitter-Logo"/>
+                    </picture>
+                </button>
+                
+            </div>
+        </div>
+        <div class="main-section">
+            <div class="separator">
+                <hr> 
+                <span>Or</span>
+                <hr>
+            </div>
+            <form action="" method="">
+                <div class="form-firtsInputs">
+                    <label for="name">
+                        <span>Name</span>
+                        <input type="text" name="name" id="name" required>
+                    </label>
+                    <label for="username">
+                        <span>Username</span>
+                        <input type="text" name="username" id="username" required>
+                    </label> 
+                </div>
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+    
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="6+ characters">
+    
+                <label for="checkbox" class="label-cbx">
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                    <span>Creating an account means you’re okay with our 
+                        <a href="/" target="_blank">Terms of Service </a>, <a>Privacy Policy</a>, and our default 
+                        <a href="/" target="_blank">Notification Settings</a>.
+                    </span>
+                </label>    
+                <button type="submit" class="btn-create">Create Account</button>
+                <h4>Already a member? <a href="">Sign In</a></h4>
+            </form>            
+        </div>
+    </section>
+    
+    
+
+    <footer>
+
+    </footer>
 </body>
 </html>

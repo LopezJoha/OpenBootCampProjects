@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root{
+   --azul: #1A73E8;
+   --darkGrey : #6E6D7A;
+   --ligthGrey : #F3F3F4;
+   --backgroundDark : #161717; 
+   --backgroundLight : white; 
+   --inputColor : #212121;    
+   --rosado : #EA4C89; 
+   --textLight : #7263D7; 
+   --textDark : black; 
+   --hoverInput : #454045; 
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+    background-color: var(--backgroundDark);    
+}
+a {
+    color: var(--textLight);
+    text-decoration: none;
+}
+
+.principal_section h4 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.principal_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.top-section{
+    align-self: flex-start;
+    padding-left: 5%;
+}
+
+.top-section h3{
+    max-width: 90%;
+    font-weight: bolder;
+    font-size: 22px;
+    color : var(--textDark);
+    letter-spacing: 0.5px;
+    font-weight:bolder;
+    color: white;
+}
+
+.top-image img {
+    height: 50px;
+    width: 120px;     
+}
+.buttons {
+    display: flex;
+    gap: 15px; 
+}
+
+.google-btn{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: blue;
+    border: none; 
+    border-radius: 5px;
+    padding: 1px;
+    min-width: 200px;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.google-btn:hover, .twitter-btn:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.google-btn picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+.google-btn img {
+    height: 20px;
+    width: 20px;
+}
+
+.google-btn span {   
+    color: white; 
+}
+
+.twitter-btn {    
+    width: 45px;
+    border: none;
+    border-radius: 10px;
+}
+
+.twitter-btn picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.twitter-btn img {
+    height: 13px;
+    width: 13px;
+    
+}
+
+.main-section{
+    max-width: 90%;
+}
+
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid var(--darkGrey);
+}
+
+.separator span{
+    font-family: 'Ubuntu';
+    color: var(--darkGrey);
+    font-weight: lighter;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: stretch;
+    justify-content: center;
+    gap:10px; 
+}
+
+
+.form-firtsInputs label{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+label input, input{
+    background-color: var(--inputColor);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 12pt;
+    cursor: pointer;
+    color:white; 
+    
+}
+
+label input:hover, input:hover, label input:focus, label:focus{
+    background-color: var(--hoverInput);
+    border: solid 2px var(--inputColor);
+    box-shadow: 0 0 5px var(--rosado);
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+.label-cbx{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+
+.label-cbx input[type="checkbox"]{
+    width:20px;
+    border: none;
+    box-shadow: none;
+}
+
+.label-cbx span {
+    font-family: 'Ubuntu';
+    font-weight: lighter;
+    font-weight: 100;
+}
+
+.btn-create{
+    background-color: var(--rosado);
+    color: white;
+    text-align: center;
+    padding: 10px; 
+    border: none; 
+    border-radius: 10px;
+    font-size: 14px;
+    width: 80%;
+    cursor: pointer;
+    align-self: center;
+    font-weight: 700;
+}
+
+.btn-create:hover{
+    opacity:0.75;
+}
+
+@media screen and (min-width: 550px) {
+    
+    .form-firtsInputs {
+        display: flex;
+        gap:20px;    
+    }
+}
+
+@media screen and (min-width: 900px){
+
+    .top-section{
+        align-self: center;        
+    }
+}
