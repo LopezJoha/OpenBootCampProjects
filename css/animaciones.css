@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-modern{
+    height: 80px;
+    width: 150px;
+    padding: 15px;    
+    border: transparent;
+    background-color:peachpuff;
+    color: fuchsia;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.btn-modern:hover {
+    cursor: pointer;
+    transform: translateY(-5px); 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: salmon;
+    color: aliceblue;
+    transition: all 4s ease-out;
+}
+
+/*
+.card{
+    width:400px; 
+    height: 400px;
+    background-color: bisque;
+}
+
+.card_1{
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+    
+    transition: transform 1s cubic-bezier(0.12, 1.09, 1,-0.12);
+    
+    animation: cambiarColor 4s ease-in-out infinite forwards alternate;
+}
+
+.card:hover .card_1{
+      
+    -webkit-animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+@keyframes cambiarColor {
+    0%{
+        background-color: darkorchid;
+        transform: translateX(0%) translateY(0%);
+    }
+    
+    25%{
+        background-color: crimson;
+        transform: translateY(100%);
+    }
+
+    50%{
+        background-color: salmon;
+        transform: translateX(100%) translateY(100%);
+    }
+    
+    75%{
+        background-color: darkred;
+        transform: translateX(100%)
+    }
+
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+}
+*/
